@@ -1,3 +1,15 @@
-<div *ngFor="let item of frases">
-  <p>{{ item?.frase }} - {{ item?.autor }} - Enviado por: {{ item?.user.username }} em {{ item?.created_at | date:"dd/MM/yyyy" }}</p>
+<div class="bg">
+  <h1>Frases</h1>
+</div>
+<div *ngFor="let item of frases" class="frases">
+  <blockquote>
+    {{ item?.frase }}
+  </blockquote>
+  <cite>
+    {{ item?.autor }}
+  </cite>
+  <div class="enviado-por">
+    Enviado por: {{ item?.user.username }} em {{ item?.created_at | date:"dd/MM/yyyy" }}
+  </div>
+  <hr>
 </div>
