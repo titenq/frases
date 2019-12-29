@@ -1,3 +1,3 @@
 <div *ngFor="let item of frases">
-  <p>{{ item?.frase }} - {{ item?.autor }}</p>
+  <p>{{ item?.frase }} - {{ item?.autor }} - Enviado por: {{ item?.user.username }} em {{ item?.created_at | date:"dd/MM/yyyy" }}</p>
 </div>
