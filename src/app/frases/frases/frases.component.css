@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #fffdf5;
   font-family: 'Special Elite', cursive;
   font-size: 3rem;
   text-shadow: 10px 5px 10px #000,
@@ -28,6 +28,12 @@
 	align-items: center;
   justify-content: center;
   padding: 20px;
+}
+
+.frases:hover {
+  background: #fffdf5;
+  color: #37495F;
+  transition: all 0.8s ease-in;
 }
 
 .enviado-por {
@@ -52,7 +58,7 @@ blockquote {
 blockquote:before,
 blockquote:after {
 	position: absolute;
-	color: #f1efe6;
+	color: #e0ddcf;
 	font-size: 8rem;
 	width: 4rem;
 	height: 4rem;
