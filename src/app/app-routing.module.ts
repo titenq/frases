@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { CadastroComponent } from './cadastro/cadastro.component';
-import { LoginComponent } from './login/login.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CadastroComponent } from './components/cadastro/cadastro.component';
+import { LoginComponent } from './components/login/login.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'frases',
-    loadChildren: () => import('./frases/frases.module').then(mod => mod.FrasesModule)
+    loadChildren: () => import('./components/frases/frases.module').then(mod => mod.FrasesModule)
   },
   {
     path: '', redirectTo: '/frases', pathMatch: 'full'

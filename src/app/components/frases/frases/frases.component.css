@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');
 
 .bg {
-  background-image: url('../../../assets/bg.jpg');
+  background-image: url('../../../../assets/bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -37,7 +37,7 @@
 }
 
 .enviado-por {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 hr {
@@ -46,7 +46,7 @@ hr {
 
 blockquote {
 	font-weight: 100;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	max-width: 600px;
 	line-height: 1.4;
 	position: relative;
@@ -55,18 +55,29 @@ blockquote {
   padding-bottom: 0;
 }
 
-blockquote:before,
+.aspas-esquerdas {
+  font-size: 3rem;
+  position: relative;
+  float: left;
+}
+
+.aspas-direitas {
+  font-size: 3rem;
+  float: right;
+}
+
+/* blockquote:before,
 blockquote:after {
 	position: absolute;
 	color: #e0ddcf;
-	font-size: 8rem;
+	font-size: 6rem;
 	width: 4rem;
 	height: 4rem;
 }
 
 blockquote:before {
 	content: '“';
-	left: -5rem;
+	left: -3rem;
 	top: -2rem;
 }
 
@@ -74,7 +85,7 @@ blockquote:after {
 	content: '”';
 	right: -5rem;
 	bottom: 1rem;
-}
+} */
 
 cite {
   font-size: 1.5rem;
